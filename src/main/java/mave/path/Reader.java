@@ -24,7 +24,10 @@ public class Reader {
     // creating array of the template file to identify arrays that need to be swapped
     public String[] transform(String s) {
         String[] fields = s.split("");
-        return fields;
+        ArrayList<Object> list = new ArrayList<Object>();
+        for (int i = 0; i <fields.length; i ++)
+        list.add(fields.length.get(i));
+        return list;
     }
 
     // public String swapping(String [] s){

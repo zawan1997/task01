@@ -43,16 +43,19 @@ public class Main {
         while (words != null) {
             words = brr.readLine();
             //converting the string to arrays using transform method
-           fresh.transform(words);
+           String [] transformed = fresh.transform(words);
             //System.out.printf("%s\n", words);
+
+            if(transformed.contains("__address__"))
 
             for (String s:transformed){
                 if("__address__".equals(s)){
+                    transformed.set()
                     
                 }
             }
 
-            }
+            
         }
    
     }

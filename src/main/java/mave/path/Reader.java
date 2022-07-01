@@ -14,7 +14,12 @@ public class Reader {
     //creating array of the read template file to identify arrays that need to be swapped
     public String replace(String s){
         String[] fields = s.split("");
-        Arrays.asList(fields).contains("__address__");
+        if(Arrays.asList(fields).contains("__address__")){
+            fields["__address__"] = [0];
+        }
+        
+        
+
         
 
         

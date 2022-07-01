@@ -21,7 +21,7 @@ public class Main {
         Map<String, ArrayList<Object>> dataSet = new HashMap<>();
 
         //reading the csv file and throwing in the values into an object list
-        //creating map to put in the key(first name) and values
+        //creating map to put in the key(first name) and values(last name, address, years)
         String line = "";
         while (line != null) {
             line =br.readLine();
@@ -42,15 +42,14 @@ public class Main {
         String words = "";
         while (words != null) {
             words = brr.readLine();
-            //converting the string to arrays using transform method
+            //converting array fo strings using transform method
            String [] transformed = fresh.transform(words);
-            //System.out.printf("%s\n", words);
 
-            if(transformed.contains("__address__"))
 
             for (String s:transformed){
-                if("__address__".equals(s)){
-                    transformed.set()
+                if("__first_name__".equals(s)){
+
+                    
                     
                 }
             }

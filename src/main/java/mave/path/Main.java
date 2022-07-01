@@ -8,6 +8,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Main {
+
+    //Instantiating reader class to use methods
+    static Reader fresh = new Reader();
+
     public static void main(String[] args) throws IOException {
 
         // read the csv file that comes in
@@ -17,6 +21,7 @@ public class Main {
         Map<String, ArrayList<Object>> dataSet = new HashMap<>();
 
         //reading the csv file and throwing in the values into an object list
+        //creating map to put in the key(first name) and values
         String line = "";
         while (line != null) {
             line =br.readLine();
@@ -25,7 +30,6 @@ public class Main {
             list.add(terms[1]);
             list.add(terms[2]);
             list.add(terms[3]);
-
         dataSet.put(terms[0], list);
         //System.out.printf("%s\n", dataSet);
         }
@@ -38,8 +42,19 @@ public class Main {
         String words = "";
         while (words != null) {
             words = brr.readLine();
+            //converting the string to arrays using transform method
+           fresh.transform(words);
             //System.out.printf("%s\n", words);
+
+            for (String s:transformed){
+                if("__address__".equals(s)){
+                    
+                }
+            }
+
+            }
         }
+   
     }
 
 }
